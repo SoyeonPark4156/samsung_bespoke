@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/reponsive.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="./index.js"></script>
     <title>Document</title>
@@ -532,7 +533,7 @@
                                     class="bespoke_point">SPOKE</span>김치플러스를 소개합니다</h3>
                             <!--kp Swiper -->
                             <div class="kp_swiper_container">
-                                <div class="swiper kp_swiper">
+                                <div class="swiper kp_swiper mySwiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="img_box"></div>
@@ -571,7 +572,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-pagination"></div>
+                                    <!-- <div class="swiper-pagination"></div> -->
                                 </div>
                             </div>
                         </div>
@@ -752,6 +753,7 @@
             object-fit: cover;
         }
     </style>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -768,8 +770,8 @@
         });
 
         let swiper2 = new Swiper(".kp_swiper", {
-                slidesPerView: 3,
-                spaceBetween: 30,
+                slidesPerView: 2,
+                spaceBetween: 20,
                 freeMode: true,
                 pagination: {
                     el: ".swiper-pagination",
